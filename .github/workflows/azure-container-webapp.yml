@@ -20,8 +20,8 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: miscellaneous.azurecr.io
-        username: ${{ secrets.ACR_USERNAME }}
-        password: ${{ secrets.ACR_PASSWORD }}
+        username: ${{ secrets.AZURE_USERNAME }}
+        password: ${{ secrets.AZURE_PASSWORD }}
 
     - name: Build Docker image
       run: |
